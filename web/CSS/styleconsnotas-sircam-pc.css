@@ -1,0 +1,108 @@
+body{
+    margin:0 auto;   
+    background-image: url("../images/fondoa.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+
+#logo{
+    
+    border: #000000;
+    width: 428px;
+    height:171px;
+    background-image:url("../images/Triangulo300.png");
+    background-repeat:no-repeat;
+    margin-left: 75%;
+    margin-top: 1%; 
+}
+
+.contenido{
+    margin:0 auto; 
+    margin-top: 1%;    
+    border:2px solid rgba(52,152,219 ,1);
+    width:60%;
+    background:rgba(255,255,255,0.5);
+    box-shadow: 10px 10px 5px 8px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.contenido h2{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #00BFFF), color-stop(100%, #FFFFFF));
+    background:-webkit-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:-moz-linear-gradient(top, #00BFFFf 0%, #FFFFFF 100%);
+    background:-ms-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:-o-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:linear-gradient(to bottom, #00BFFF 0%, #FFFFFF 100%);
+    height: 1.5em;
+    margin:0 auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 5px 5px 0 0 ;
+}
+
+@media screen and (max-width: 1000px) {
+    tr { 
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.5em 0;
+        border: 1px solid rgba(3,3,3,0.2);
+
+    }
+    td, th {
+        flex: 1 1 150px;
+        border:solid 0.2px white;
+    }
+
+}
+
+li{
+    display: table-cell;
+    padding-left: 3em;
+
+}
+
+tr, td{
+    width: 70%;
+    padding: 0 5em 0 1em;
+    border:solid 0.2px white;
+
+}
+
+
+table, th{
+    margin: 5% 5% 5% 15%; 
+    border-collapse: collapse;
+}
+
+th{
+    background:rgba(102,204,255,.4);
+    color:black;
+    font-size: 1.1em;
+    text-indent: 80px;
+}
+
+table tr{
+    text-indent: 50px;
+    text-align: left;
+}
+
+table tr:nth-child(odd) 
+{
+    background-color: rgba(102,204,255,.3);
+}
+
+table tr:nth-child(even) 
+{
+    background-color: rgba(255,255,255,.1);
+}
+
+
+h3{
+    border:solid .5px rgba(0, 128, 128,.5);
+    width:20%;
+    text-align: center;
+    margin-left: 40%;
+    
+}

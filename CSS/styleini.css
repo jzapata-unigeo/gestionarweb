@@ -1,0 +1,89 @@
+body{
+    margin:0 auto;   
+    background-image: url("../images/fondoa.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+
+#logo{
+    position: absolute;
+    top: 10px;
+    border: #000000;
+    width: 428px;
+    height:171px;
+    background-image:url("../images/TrianguloLogo.png");
+    background-repeat:no-repeat;
+    margin-left: 75%;
+    margin-top: 10%; 
+}
+
+/*generales*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    list-style: none;
+    }
+
+nav li{
+    line-height: 1.5rem;
+    position:relative;
+}
+
+.menu ul{
+    position:absolute;
+}
+
+nav a{
+   
+    display: block;
+    padding:0 2em;
+    text-decoration: none;
+    color:black;
+    transition: .4s;
+    font-weight:bolder; 
+}
+
+nav a:hover{
+    background:rgba(0,0,0,0.3);
+}
+
+.menu ul{
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/*primer nivel*/
+nav > ul{   
+    border-bottom: 1px solid gray;
+    border-bottom-style:groove; 
+    background: rgba(212,228,239,1);
+    box-shadow: -1px 1px 17px 0px rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: table;
+    width: 100%;     
+}
+
+.menu > li{
+    float:left;
+
+}
+
+/*segundo nivel*/
+nav li li{
+    background: rgba(212,228,239,1);
+    width: 116%;
+    border-color: rgba(123,111,111,0.2);
+    border-bottom-width: 0.5px;
+    
+}
+
+nav li:hover > ul{
+    max-height: 200px;
+    overflow: visible;
+
+}

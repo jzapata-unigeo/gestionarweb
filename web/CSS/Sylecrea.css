@@ -1,0 +1,108 @@
+body{
+    margin:0 auto;   
+    background-image: url("../images/fondoa.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+
+#logo{
+    position: absolute;
+    top: 10px;
+    border: #000000;
+    width: 428px;
+    height:171px;
+    background-image:url("../images/Triangulo300.png");
+    background-repeat:no-repeat;
+    margin-left: 75%;
+    margin-top: 10%; 
+}
+
+
+.contenido{
+    margin:0 auto; 
+    margin-top: 20%;    
+    border:2px solid rgba(52,152,219 ,1);
+    width: 400px;
+    height: 250px;
+    background: rgba(255, 255, 255,0.5);
+    border: solid 5px rgba(0, 138, 205,1);
+    border-top:20px solid transparent;
+    border-image: url("../images/abstracto-azul.jpg") 50 round;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    display: block;
+
+
+}
+
+.usuario{
+    background-image:url("../images/iconsuser.png");
+    background-repeat:no-repeat;
+    width: 50px;
+    height:50px;
+    margin: 1em 0 0 3em;
+
+
+}
+
+
+li{
+    list-style-type:none;
+
+}
+
+.datos label{
+    text-align: right;
+    color: #555555;
+    float: left;
+    font-family: calibri;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0.3em;
+    width: 5em;
+    margin:1%;
+
+}
+
+input{
+    margin:1%;
+    height:25px;  
+    width:15em; 
+    border:1px solid rgba(102,204,255,.5);
+    border-radius:5px;
+    font-size: 12px;
+    padding: 0 1em 0 1em;
+    transition: padding .25s;
+}
+
+
+.submit{
+    padding: 7px 10px;
+    font-family: Helvetica,calibri, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px skyblue, inset 0 0 9px white;
+    margin:5% 0 0 35% ;
+
+}
+
+h3{
+    float:left;
+    width: 200px;
+    margin-left: 3.5em;
+}
+
+h4{
+    color: red;
+    margin-left: 47%;
+    
+}
+
+.submit:hover,
+.submit:active{
+    background: blue;
+    box-shadow:none;
+
+}

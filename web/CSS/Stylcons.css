@@ -1,0 +1,187 @@
+body{
+    margin:0 auto;   
+    padding: 0;
+    background-image: url("../images/fondoa.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+
+#logo{
+
+    border: #000000;
+    width: 428px;
+    height:171px;
+    background-image:url("../images/Triangulo300.png");
+    background-repeat:no-repeat;
+    margin-left: 75%;
+    margin-top: 2%; 
+}
+
+.contenido{
+
+    margin:0 auto; 
+    border:2px solid rgba(52,152,219 ,1);
+    width:60%;
+    background:rgba(255,255,255,0.5);
+    box-shadow: 10px 10px 5px 8px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.contenido h2{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #00BFFF), color-stop(100%, #FFFFFF));
+    background:-webkit-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:-moz-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:-ms-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:-o-linear-gradient(top, #00BFFF 0%, #FFFFFF 100%);
+    background:linear-gradient(to bottom, #00BFFF 0%, #FFFFFF 100%);
+    height: 1.5em;
+    margin:0 auto;
+    margin-bottom: 4rem;
+    text-align: center;
+    border-radius: 5px 5px 0 0 ;
+}
+
+table.table
+{
+    align-self: flex-end;
+    max-width: 100px;
+    height: 5%;
+
+}
+
+.table tr { 
+    border:solid 0.2px white;
+    text-align: center;
+    color:red;
+}
+
+button { 
+    padding: 5em;
+    width: 3em;
+    border: none; 
+    transition: all 0.3s;
+}
+
+button:hover { 
+    box-shadow: 0 0 4px rgba(3,3,3,0.8); 
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 1000px) {
+    tr { 
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.5em 0;
+        border: 1px solid rgba(3,3,3,0.2);
+
+    }
+    td, th {
+        flex: 1 1 150px;
+        border:solid 0.2px white;
+    }
+
+}
+
+
+.contenido select {
+    height:2.1em; 
+    box-shadow: none;
+    border: 0.5px solid rgba(114,172,195,1);
+    border-radius: 5px;
+    margin-left: 40%;
+
+}
+
+
+.contenido button{
+    height:2.1em; 
+    box-shadow: none;
+    border: 0.5px solid rgba(114,172,195,1);;
+    border-radius: 5px;
+    padding: 1%;   
+}
+
+
+.contenido input{
+    height:1.5em; 
+    box-shadow: none;
+    border: 0.5px solid rgba(114,172,195,1);
+    border-radius: 5px;
+    padding: 2%;   
+}
+
+tr, td{
+    width: 2em;
+    padding: 0 1em 0 1em;
+    border:solid 0.2px white;
+
+}
+
+th{
+    background-color: rgba(114,172,195,.3);
+    color:black;
+    font-size: 1em;
+    padding: 0 1.2em 0 1.2em;
+}
+
+table, th{
+    margin: 5% 5% 5% 8%; 
+    border-collapse: collapse;
+
+}
+
+table tr:nth-child(odd) 
+{
+    background-color: rgba(0,0,0,.3);
+
+}
+
+table tr:nth-child(even) 
+{
+    background-color: rgba(0,0,0,.1);
+}
+
+
+.ico-add{
+    background-image:url("../images/plus.png");
+    background-repeat:no-repeat;
+    margin-left: 45%;   
+    width:20px;
+    height:20px;
+    border:2px solid rgba(52,152,219 ,0);
+    text-align:center;
+    vertical-align:middle;
+}
+.ico-add:hover, ico-edit:hover,ico-editEs:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+
+.ico-edit:hover, .ico-edit:hover,.ico-editEs:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.ico-edit{
+    
+    background-image:url("../images/cert-16.png");
+    background-repeat:no-repeat;
+    margin-left: 45%;   
+    width:20px;
+    height:20px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.ico-editEs{
+    background-image:url("../images/edit.png");
+    background-repeat:no-repeat;
+    width:20px;
+    height:20px;
+    text-align:center;
+    vertical-align:middle;
+}

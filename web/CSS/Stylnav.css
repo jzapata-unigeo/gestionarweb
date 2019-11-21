@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/05/2018, 06:24:22 PM
+    Author     : jeison
+*/
+
+.menu{
+    display:flex;
+    
+    
+}
+/*generales*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    list-style: none;
+    }
+
+nav li{
+    line-height: 1.5rem;
+    position:relative;
+    flex: auto;
+}
+
+.menu ul{
+    position:absolute;
+}
+#user{
+    margin-left: 40%;
+   font-size: 12px;
+}
+
+
+nav a{
+      
+    padding:0 1em;
+    text-decoration: none;
+    color:black;
+    transition: .4s;
+    font-weight:bolder; 
+}
+
+nav a:hover{
+    background:rgba(0,0,0,.1);
+    width: 100%;
+}
+
+.menu ul{
+     max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/*primer nivel*/
+nav > ul{   
+    border-bottom: 1px solid gray;
+    border-bottom-style:groove; 
+    background:linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-webkit-linear-gradient(top,rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    box-shadow: -1px 1px 17px 0px rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;  
+    
+    
+}
+
+/*segundo nivel*/
+nav li li{
+     background:linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-webkit-linear-gradient(top,rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.1) 0%, #C8C8C8 2%);
+  
+    border-color: rgba(123,111,111,0.2);
+    border-bottom-width: 0.5px;
+    
+}
+
+nav li:hover > ul{
+    max-height: 200px;
+    overflow: visible;
+
+}
+
+.back{
+     z-index: 150;
+    position: relative;
+    width: 30px;
+    height:30px;
+    top:1px;
+    left:30px;
+    background-image:url("../images/icons-left.png");
+    background-size: 18px; 
+    background-repeat: no-repeat; 
+}
+
+.back:hover{
+    background:transparent;
+    z-index: 150;
+    position: relative;
+    width: 30px;
+    height:30px;
+    top:1px;
+    left:30px;
+    background-image:url("../images/icons-left-blue.png");
+    background-size: 19px; 
+    background-repeat: no-repeat; 
+   transition: all .1s ease-out;
+    
+}
+
+
+@media screen and (max-width: 1124px) {
+    nav > ul {
+      padding-left: 10px;  
+    }
+    
+  .back{
+    position: relative;  
+      left:10px;
+  }
+  
+  nav a {
+    padding-left: 1.7rem;
+}
+ #user {
+    margin-left: 10%;
+}
+
+  
+}

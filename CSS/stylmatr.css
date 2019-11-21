@@ -1,0 +1,133 @@
+body{
+    margin:0 auto;   
+    background-image: url("../images/fondoa.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+#logo{
+    position: absolute;
+    top: 10px;
+    border: #000000;
+    width: 428px;
+    height:171px;
+    background-image:url("../images/TrianguloLogo.png");
+    background-repeat:no-repeat;
+    margin-left: 75%;
+    margin-top: 10%; 
+}
+.contenido{
+
+    margin:0 auto; 
+    margin-top: 20%;    
+    border:2px solid rgba(52,152,219 ,1);
+    width:50%;
+    height:20rem;
+    background:rgba(255,255,255,0.5);
+    box-shadow: 10px 10px 5px 8px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.contenido h2{
+    background: rgba(102,204,255,.5);
+    border: solid 1px rgba(102,204,255,1);
+    width: 99.7%;
+    margin:0 auto;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.contenido:nth-child(){
+    background: red;
+    color:yellow;
+
+}
+
+.contenido1{
+    width: 47%;
+    margin: 1%;
+    border:0.5px dotted rgba(52,152,219,.2);
+    float: left;
+    
+}
+
+.contenido2{
+    margin:1%;
+    width: 47%;
+    border:0.5px dotted rgba(52,152,219,0.2);
+    float: left;
+}
+
+
+ul{
+    list-style: none;
+    
+}
+
+.contenido1 li, .contenido2 li
+{
+    padding:0.7em; 
+    border-bottom:1px solid #eee;
+    list-style-type:none;
+}
+
+.contenido .submit{
+
+    margin: 3% 0 0 47%;
+    padding: 0.5em;
+    border: 0.5px solid #66ccff; 
+    border-radius: 5px;
+    
+}
+
+.contenido label{
+
+    margin-right: 3%;
+    text-align: right;
+    color: #555555;
+    float: left;
+    font-family: calibri;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0.3em;
+    padding: 0.1em;
+    width: 5em;
+}
+
+
+.contenido input {
+    height:1.5em; 
+    width:8.3em; 
+    padding:2% 0.8em;
+    border:1px solid rgba(102,204,255,.5);
+    box-shadow: 0px 0px 3px rgba(102,204,255,.2), 0 10px 15px rgba(102,204,255,.2) inset;
+    border-radius:5px;
+    color: rgba(0,0,0,0.2);
+    font-size: 12px;
+    padding-right:40px;
+    transition: padding .25s;
+
+}
+
+.contenido select{
+    height:2.5em; 
+    width:8.3em;
+    border:1px solid rgba(102,204,255,.5);
+    box-shadow: 0px 0px 3px rgba(102,204,255,.2), 0 10px 15px rgba(102,204,255,.2) inset;
+    border-radius:5px;
+    color: rgba(0,0,0,0.2);
+    font-size: 12px;
+    padding-right:40px;
+}
+
+
+.contenido input:target,
+.contenido input:valid,
+.contenido select:target,
+.contenido select:valid
+{
+    color: rgba(0,0,0,1);
+    border:1px solid rgba(1,204,255,1);
+
+}
